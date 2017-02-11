@@ -1,0 +1,138 @@
+/*
+ * header styles partials
+ */
+/* import variables, mixins */
+/*
+ * common variables
+ */
+/* colors */
+/* font and font-family */
+/* default margin and padding */
+/* border */
+/*
+ * common sass mixins
+ */
+header {
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */ }
+  header .logo .item1, header .logo .item2 {
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000; }
+  header .logo .item2 {
+    background: #3bb18d;
+    padding: 10px 15px;
+    margin: 5px auto auto 5px;
+    font-size: 20px;
+    color: #000;
+    z-index: 2;
+    width: 17px;
+    height: 23px;
+    border: none; }
+  header ul.main-menu {
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    margin-left: auto;
+    list-style: none; }
+    header ul.main-menu li {
+      padding-right: 20px; }
+
+/*
+ * main content styles partials
+ */
+/* import variables, mixins */
+/*
+ * common variables
+ */
+/* colors */
+/* font and font-family */
+/* default margin and padding */
+/* border */
+/*
+ * common sass mixins
+ */
+body {
+  background: #e6e5e1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh; }
+
+.inner-content {
+  padding: 20px 30px;
+  border: 8px solid #fff;
+  width: 75%;
+  box-shadow: 0 15px 49px -10px rgba(0, 0, 0, 0.5);
+  color: #575b63;
+  text-align: center; }
+  .inner-content a {
+    color: #575b63;
+    text-decoration: none; }
+    .inner-content a:hover {
+      text-decoration: underline; }
+  .inner-content section {
+    padding: 20px; }
+    .inner-content section .intro {
+      font-size: 30px;
+      line-height: 50px; }
+    .inner-content section .tagline {
+      font-size: 15px; }
+
+/*
+ * footer styles patials
+ */
+/* import variables, mixins */
+/*
+ * common variables
+ */
+/* colors */
+/* font and font-family */
+/* default margin and padding */
+/* border */
+/*
+ * common sass mixins
+ */
+footer {
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */ }
+  footer ul.secondary-menu {
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    list-style: none; }
+    footer ul.secondary-menu li {
+      padding-right: 20px; }
+  footer .hire-me {
+    margin-left: auto;
+    padding: 5px 20px;
+    background: #3bb18d;
+    line-height: 30px;
+    height: 30px; }
+    footer .hire-me a:hover {
+      color: #000;
+      text-decoration: none; }

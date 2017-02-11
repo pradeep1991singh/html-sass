@@ -1,0 +1,19 @@
+/*
+ * common sass mixins
+ */
+
+$primary-box-shadow-color: rgba(0, 0, 0, 0.5);
+$secondary-box-shadow-color: rgba(0, 0, 0, 0.3);
+
+@mixin display-flex() {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */   
+}
+
+@mixin box-shadow() {
+  -webkit-box-shadow: 0 15px 49px -10px $primary-box-shadow-color;
+  -moz-box-shadow: 0 15px 49px -10px $primary-box-shadow-color;
+  box-shadow: 0 15px 49px -10px $primary-box-shadow-color;
+}

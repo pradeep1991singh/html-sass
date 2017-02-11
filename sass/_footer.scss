@@ -1,0 +1,36 @@
+/*
+ * footer styles patials
+ */
+
+/* import variables, mixins */
+@import "variables";
+@import "mixins";
+
+$button-height: 30px;
+
+footer {
+  @include display-flex();
+
+  ul.secondary-menu {
+    @include display-flex();
+    list-style: none;
+
+    li {
+      padding-right: $default-padding*2;
+    }
+  }
+
+  .hire-me {
+    margin-left: auto;
+    padding: $default-padding/2 $default-padding*2;
+    background: $secondary-bg-color;
+    line-height: $button-height;
+    height: $button-height; 
+
+    a:hover {
+      color: $default-font-color;
+      text-decoration: none;
+    }
+  }
+
+}

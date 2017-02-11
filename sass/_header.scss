@@ -1,0 +1,49 @@
+/*
+ * header styles partials
+ */
+
+/* import variables, mixins */
+@import "variables";
+@import "mixins";
+
+$logo-width-height: 40px;
+$padding-left-right: 15px;
+
+header {
+  @include display-flex();
+
+  .logo {
+    .item1  {
+      position: absolute;
+      z-index: 1;
+      width: $logo-width-height;
+      height: $logo-width-height; 
+      border: $default-border-size solid $default-border-color;      
+    }     
+
+    .item2 {
+      @extend .item1; // inheritance used
+      background: $secondary-bg-color;
+      padding: $default-padding $padding-left-right;
+      margin: $default-margin/2 auto auto $default-margin/2;        
+      font-size: $default-font-size;
+      color: $default-font-color;      
+      z-index: 2;
+      width: $logo-width-height/2 - 3;
+      height: $logo-width-height/2 + 3;
+      border: none;
+    }
+
+  }
+
+  ul.main-menu {
+    @include display-flex();
+    margin-left: auto;
+    list-style: none;
+
+    li {
+      padding-right: $default-padding*2;
+    }
+  }
+
+}

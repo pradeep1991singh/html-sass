@@ -1,0 +1,54 @@
+/*
+ * main content styles partials
+ */
+
+/* import variables, mixins */
+@import "variables";
+@import "mixins";
+
+$margin-inner-content:        30px;
+$width-inner-content:         75%;
+$main-content-size:           30px;
+$content-line-height:         50px;
+
+body {
+  background: $bg-color;
+  font-family: $font-family;
+  @include display-flex();
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inner-content {
+  padding: $default-margin*2 $margin-inner-content; // * operator used
+  border: $default-border-size*4 solid $secondary-border-color;
+  width: $width-inner-content;
+  @include box-shadow(); // mixins used
+  color: $primary-color;
+  text-align: center;
+
+  // nesting used
+  a { 
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }  
+
+  section {
+    padding: $default-padding*2;
+
+    .intro {
+      font-size: $main-content-size;
+      line-height: $content-line-height;
+    }
+
+    .tagline {
+      font-size: $main-content-size/2;
+    }
+  }
+
+}
